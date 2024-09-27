@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Inline css-->
+    <div style="background-color: rgb(9, 230, 230); width: 320px; height: 200px;">
+        div2
+    </div>
+    <div>
+        div3
+    </div>
+    <div id="div2">
+        div4
+    </div>
+    <p>p1</p>
+    <p>p1</p>
+    <p>p1</p>
+    <p class="boxBg">p1</p>
+    <!--embaded css-->
+    <style>
+        /* TAG SELECTOR */
+        div{
+background-color: antiquewhite;
+width: 230px;
+height: 120px;
+border-color: bisque;
+        }
+        /*UNIVERSAL SELECTOR*/
+        *{
+margin-left: 30px;
+        }
+        /*CLASS SELECTOR*/
+        .boxBg{
+border: dotted 5px chocolate;
+width: 30px;
+height: 25px;
+text-align: center;
+        }
+        /*ID SELECTOR */
+        #div2{
+            transform: rotate(450deg);
+ background-color: black;
+        }
+        /* PSEUDO SELECTOR*/
+        p:hover{
+            transform: scale(3);
+        }
+    </style>
+</body>
+</html>
