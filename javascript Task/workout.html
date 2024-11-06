@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+
+
+
+    <!------task1------->
+
+
+
+    <div class="container mt-5">
+
+        <h1>Weekdays</h1>
+
+    </div>
+
+    <div class="container mt-4">
+
+        <input type="number" id="num" class="box form-control" placeholder="Enter the number">
+
+        <input type="text" id="answer" class="box form-control mt-4" placeholder="Day" disabled>
+
+        <button onclick="key()" class="btn btn-success mt-4">GetAnswer</button> 
+
+    </div>
+
+    <style>
+
+        h1{
+
+            text-align: center;
+
+        }
+
+        .box{
+
+            margin-left: 35%;
+
+            width: 30%;
+
+        }
+
+        button{
+
+            margin-left: 35%;
+
+        }
+
+    </style>
+
+    <script>
+
+        function key(){
+
+            let number = document.getElementById("num").value
+
+            switch (number){
+
+                case '1':
+
+                document.getElementById("answer").value = "Sunday";
+
+                break;
+
+                case '2':
+
+                document.getElementById("answer").value = "Monday";
+
+                break;
+
+                case '3':
+
+                document.getElementById("answer").value = "Tuesday";
+
+                break;
+
+                case '4':
+
+                document.getElementById("answer").value = "Wednesday";
+
+                break;
+
+                case '5':
+
+                document.getElementById("answer").value = "Thursday";
+
+                break;
+
+                case '6':
+
+                document.getElementById("answer").value = "Friday";
+
+                break;
+
+                case '7':
+
+                document.getElementById("answer").value = "Saturday";
+
+                break;
+
+                default:
+
+                document.getElementById("answer").value = "Undefined"
+
+            }
+
+        }
+
+    </script>   
+
+    <hr>
+
+
+
+
+    <!-----task2------>
+
+
+
+
+
+    <div class="container mt-5">
+
+        <h1>Dates of Month</h1>
+
+        <input type="text" id="input" class="box form-control mt-4" placeholder="Enter the name of month">
+
+        <input type="text" id="answer1" class="box form-control mt-4" placeholder="no. of dates in month" disabled>
+
+        <button onclick="get()" class="btn btn-success mt-4">GetAnswer</button>
+
+    </div>
+
+    <script>
+
+        function get(){
+
+            let value = document.getElementById("input").value;
+
+            if(value == "JANUARY" || value == "JAN" || value == "jan" || value == "january"){
+
+                document.getElementById("answer1").value = "31 days in a month"
+
+            }
+
+            else if (value == "FEBRUARY" || value == "FEB" || value == "feb" || value == "february"){
+
+                document.getElementById("answer1").value = "28 days in a month"
+
+            }
+
+            else if (value == "MARCH" || value == "march"){
+
+                document.getElementById("answer1").value = "31 days in a month"
+
+            }
+
+            else if (value == "APRIL" || value == "april"){
+
+                document.getElementById("answer1").value = "30 days in a month"
+
+            }
+
+            else if (value == "MAY" || value == "may"){
+
+                document.getElementById("answer1").value = "31 days in a month"
+
+            }
+
+            else if (value == "JUNE" || value == "june"){
+
+                document.getElementById("answer1").value = "30 days in a month"
+
+            }
+
+            else if (value == "JULY" || value == "july"){
+
+                document.getElementById("answer1").value = "31 days in a month"
+
+            }
+
+            else if (value == "AUGUST" || value == "august" || value == "AUG" || value == "aug"){
+
+                document.getElementById("answer1").value = "31 days in a month"
+
+            }
+
+            else if (value == "SEPTEMBER" || value == "SEPT" || value == "september" || value == "sept"){
+
+                document.getElementById("answer1").value = "30 days in a month"
+
+            }
+
+            else if (value == "OCTOBER" || value == "OCT" || value == "october" || value == "oct"){
+
+                document.getElementById("answer1").value = "31 days in a month"
+
+            }
+
+            else if (value == "NOVEMBER" || value == "NOV" || value == "november" || value == "nov"){
+
+                document.getElementById("answer1").value = "30 days in a month"
+
+            }
+
+            else if (value == "DECEMBER" || value == "DEC" || value == "december" || value == "dec"){
+
+                document.getElementById("answer1").value = "31 days in a month"
+
+            }
+
+            else {
+
+                document.getElementById("answer1").value = "Invalid month name"
+
+            }
+
+        }
+
+    </script>
+
+    <hr>
+
+
+
+    <!-----task3------>
+
+
+
+    <div class="container mt-5">
+
+        <h1>Vowels</h1>
+
+        <input type="text" id="vo" class="box form-control mt-4" placeholder="Enter the letter">
+
+        <input type="text" id="answer2" class="box form-control mt-4" placeholder="Vowel or not" disabled>
+
+        <button onclick="task3()" class="btn btn-success mt-4">GetAnswer</button>
+
+    </div>
+
+    <script>
+
+        function task3(){
+
+            let value = document.getElementById("vo").value;
+
+            if(value == 'a' ||value == 'e' ||value == 'i' ||value == 'o' ||value == 'u' ||
+            
+            value == 'A' ||value == 'E' ||value == 'I' ||value == 'O' ||value == 'U'){
+
+                document.getElementById("answer2").value = "Vowel";
+
+            }
+
+            else {
+
+                document.getElementById("answer2").value = "Not a Vowel"
+
+            }
+
+        }
+
+    </script>
+
+    <hr>
+
+
+
+    <!-----task4----->
+
+
+
+    <div class="container mt-5">
+
+        <h1>Leap year</h1>
+
+        <input type ="number" id="numb" class="box form-control mt-4" placeholder="Enter the Year">
+
+        <input type ="text" id="answer3" class="box form-control mt-4" placeholder="leap year or not" disabled>
+
+        <button onclick="task4()" class="btn btn-success mt-4">GetAnswer</button>
+
+        <hr>
+
+    </div>
+
+    <script>
+
+        function task4(){
+
+            let get = document.getElementById("numb").value;
+            
+            if (get %4==0 ){
+
+                document.getElementById("answer3").value = "Leap Year"
+
+            }
+
+            else {
+
+                document.getElementById("answer3").value = "Not a Leap Year"
+
+            }
+
+        }
+
+    </script>
+
+
+
+    <!-----task5------>
+
+
+    <div class="container mt-5">
+
+        <h1>Current Bill</h1>
+
+        <input type="number" id="no" class="box form-control mt-4" placeholder="Enter the unit">
+
+        <input type="text" id="answer4" class="box form-control mt-4" placeholder="Amount"disabled>
+
+        <button onclick="task5()" class="btn btn-success mt-4">GetAnswer</button>
+
+        <hr>
+
+    </div>
+
+    <script>
+
+        function task5(){
+
+            let unit = document.getElementById("no").value;
+
+            if(unit <=100){
+
+                document.getElementById("answer4").value = "Rs. 0"
+
+            }
+
+            else if (unit>=100 && unit<=150){
+
+                var amount = 4 * 0.20;
+
+                var amount1 = 4 + amount;
+
+                document.getElementById("answer4").value = "Rs. "+amount1; 
+
+            }
+
+            else if (unit>150 && unit<=200){
+
+                var amount = 7.5 * 0.20;
+
+                var amount1 = 7.5 + amount;
+
+                document.getElementById("answer4").value = "Rs. "+amount1; 
+
+            }
+
+            else if (unit>200 && unit<=250){
+
+                var amount = 10 * 0.20;
+
+                var amount1 = 10 + amount;
+
+                document.getElementById("answer4").value = "Rs. "+amount1; 
+
+            }
+
+        }
+
+    </script>
+
+
+
+
+
+
+<div class="container mt-5">
+
+    <h1>Positive or Negative</h1>
+
+        <input type="number" class="box form-control" id="nume" placeholder="Enter the Number">
+
+        <input type="text" class="box form-control mt-4" id="answer5" placeholder="Positive or Negative" disabled>
+
+        <button onclick="cvalue()" class="btn btn-success mt-4">GetAnswer</button>
+
+        <hr>
+
+</div>
+
+
+<script>
+
+    function cvalue(){
+
+    let numbers = document.getElementById("nume").value;
+
+    if(numbers > 0){
+
+        document.getElementById("answer5").value = "Positive Number";
+
+    }
+
+    else if(numbers < 0){
+
+        document.getElementById("answer5").value = "Negative Number"
+
+    }
+
+    else if(numbers == 0){
+
+        document.getElementById("answer5").value = "zero";
+
+    }
+
+}
+
+</script>
+    
+</body>
+</html>
