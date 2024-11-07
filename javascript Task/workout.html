@@ -430,6 +430,38 @@
 }
 
 </script>
-    
+ <!-----task5------>
+<div class="container mt-4">
+<h1>Shapes</h1>
+
+<input type="number" id="len" class="box form-control mt-4" placeholder="length">
+
+<input type="number" id="bre" class="box form-control mt-4" placeholder="breadth">
+
+<input type="text" id="answer6" class="box form-control mt-4" placeholder="shapes" disabled>
+
+<button onclick="shape()"  class="btn btn-success mt-4">GetAnswer</button>  
+
+<hr>
+
+<script>
+function shape(){
+    let length=document.getElementById("len").value;
+
+    let breadth=document.getElementById("bre").value;
+    if(length==breadth){
+        document.getElementById("answer6").value="square shape"
+    }
+    else{
+        document.getElementById("answer6").value="Rectangular shape" 
+    }
+}
+
+
+
+</script>
+</div>
+
+
 </body>
 </html>
